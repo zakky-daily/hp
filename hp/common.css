@@ -2,15 +2,13 @@
     font-size: 15px;
     color: white;
 }
-
 body {
     margin: 0 auto;
     width: 920px;
     background-color: black;
 }
 
-/* ===== ヘッダー部分 ===== */
-
+/* ヘッダー部分 */
 header {
     display: flex;
     gap: 1px;
@@ -41,4 +39,28 @@ header a:last-child{
 }
 header a:hover {
     background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* フッター部分 */
+footer {
+    padding: 24px;
+    border-top: solid 1px #a0a0a0;
+}
+footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 8px;
+    text-align: center;
+}
+footer .links a img {
+    width: 44px;
+    height: 44px;
+}
+footer .links a img:hover {
+    transform: scale(1.1);
+}
+footer .copyright {
+    margin: 8px;
+    text-align: center;
 }

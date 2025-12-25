@@ -1,5 +1,4 @@
 /* スポットライト部分 */
-
 .spotlights {
     margin: 0 20px;
     height: 300px;
@@ -10,11 +9,9 @@
 }
 
 /* タイトル部分 */
-
 .title {
     margin: 32px;
 }
-
 .title .main {
     display: flex;
     align-items: center;
@@ -22,9 +19,13 @@
     margin: 14px 0;
 }
 .title .main .user-icon {
+    position: relative;
     width: 96px;
     height: 96px;
+    background-image: url("user_icon.jpeg");
+    background-size: cover;
     border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
 }
 .title .main .label {
     margin-left: 12px;
@@ -42,7 +43,6 @@
 }
 
 /* メッセージ部分 */
-
 .title .message {
     margin: 14px 88px;
     background: #2a2a2a;
@@ -50,7 +50,27 @@
     overflow: hidden;
 }
 .title .message .inner {
+    display: none;
     padding: 6px;
     width: fit-content;
     white-space: nowrap;
+}
+
+/* リンク部分 */
+body > .links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 40px 0;
+}
+body > .links a {
+    display: block;
+    padding: 8px 48px;
+    border: solid 1px #a0a0a0;
+    border-radius: 6px;
+    text-decoration: none;
+}
+body > .links a:hover{
+    border-color: #808080;
+    color: #b0b0b0;
 }

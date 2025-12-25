@@ -1,0 +1,59 @@
+/* スポットライト部分 */
+.spotlights {
+    margin: 0 20px;
+    height: 300px;
+    background-image: url('test.jpg');
+    background-size: cover;
+    background-position: 50% 55%;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+
+/* タイトル部分 */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 32px;
+}
+.title .user-icon {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    background-image: url("../user_icon.jpeg");
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.title .label {
+    font-size: 33px;
+}
+
+/* テーブル部分 */
+.infomations {
+    margin: 32px;
+}
+.infomations table {
+    margin: 24px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+.infomations table tr th {
+    padding: 16px 0;
+    width: 160px;
+    border: solid 1px #a0a0a0;
+    font-weight: normal;
+}
+.infomations table tr td {
+    padding: 16px 24px;
+    border: solid 1px #a0a0a0;
+}
+
+.infomations table tr td ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 24px;
+}
