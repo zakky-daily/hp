@@ -1,0 +1,44 @@
+* {
+    font-size: 15px;
+    color: white;
+}
+
+body {
+    margin: 0 auto;
+    width: 920px;
+    background-color: black;
+}
+
+/* ===== ヘッダー部分 ===== */
+
+header {
+    display: flex;
+    gap: 1px;
+    margin: 16px 0;
+    padding: 1px;
+    background: linear-gradient(to bottom,
+        #282828 0%,
+        #202020 50%,
+        #171717 50%,
+        #222222 100%
+    );
+    border-radius: 8px;
+    overflow: hidden;
+}
+header a {
+    flex: 1;
+    padding: 12px 0;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+header a:first-child{
+    border-radius: 7px 0 0 7px;
+}
+header a:last-child{
+    border-radius: 0 7px 7px 0;
+}
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+}
