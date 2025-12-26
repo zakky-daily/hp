@@ -1,0 +1,49 @@
+/* タイトル部分 */
+body > .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 30px;
+}
+body > .title .user-icon {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    background-image: url("../icons/artworks.png");
+    background-size: cover;
+}
+body > .title .label {
+    font-size: 33px;
+}
+
+/* カテゴリ */
+.categories {
+    margin: 30px;
+}
+.categories .category {
+    margin: 20px;
+    border: solid 1px #a0a0a0;
+    border-radius: 12px;
+}
+.categories .category .title {
+    display: flex;
+    align-items: center;
+    margin: 14px;
+}
+.categories .category .title .icon {
+    width: 52px;
+    height: 52spx;
+}
+.categories .category .title .label {
+    margin-left: 8px;
+    font-size: 32px;
+}
+.categories .category .title .message {
+    margin-left: 12px;
+    color: #d8d8d8;
+}
+
+
+
+
