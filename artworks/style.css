@@ -19,12 +19,13 @@ body > .title .label {
 
 /* カテゴリ */
 .categories {
-    margin: 30px;
+    margin: 30px 36px;
 }
 .categories .category {
-    margin: 20px;
-    border: solid 1px #a0a0a0;
-    border-radius: 12px;
+    margin: 26px 0;
+    border: solid 1px #333333;
+    border-radius: 13px;
+    background-color: #1c1c1c;
 }
 .categories .category > .title {
     display: flex;
@@ -45,28 +46,34 @@ body > .title .label {
 }
 
 /* カテゴリ内のリンク */
-.categories .category .link {
+.categories .category .links {
+    margin-bottom: 28px;
+}
+.categories .category .links .link {
     position: relative;
     display: flex;
-    margin: 24px 120px;
+    margin: 22px 120px;
     border: solid 1px #a0a0a0;
-    border-radius: 9px;
+    border-radius: 12px;
     overflow: hidden;
     text-decoration: none;
 }
-.categories .category .link:hover::after {
+.categories .category .links .link:hover {
+    border: solid 1px #787878;
+}
+.categories .category .links .link:hover::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.25);
 }
-.categories .category .link .thumbnail {
+.categories .category .links .link .thumbnail {
     flex: 0 0 180px;
     height: 100px;
     object-fit: cover;
     pointer-events: none;
 }
-.categories .category .link .label {
+.categories .category .links .link .label {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,10 +82,10 @@ body > .title .label {
     min-width: 0;
     border-left: solid 1px #a0a0a0;
 }
-.categories .category .link .label .title {
+.categories .category .links .link .label .title {
     font-size: 26px;
 }
-.categories .category .link .label .message {
+.categories .category .links .link .label .message {
     color: #d8d8d8;
     overflow: hidden;
     white-space: nowrap;
