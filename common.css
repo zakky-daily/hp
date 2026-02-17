@@ -45,12 +45,15 @@ header a:hover {
 .breadcrumbs {
     display: flex;
     align-items: center;
-    margin: 5px 36px;
+    margin: 4px 17px;
+}
+.breadcrumbs * {
+    font-size: 14px;
 }
 .breadcrumbs .right-arrow {
     margin-left: 6px;
     margin-right: 3px;
-    height: 16px;
+    height: 14px;
 }
 .breadcrumbs .here {
     color: #a0a0a0;
@@ -83,8 +86,18 @@ header a:hover {
     margin: 24px 132px;
     padding: 20px;
     text-align: center;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+    border: solid 1px #404040;
     border-radius: 12px;
+}
+
+/* ブログ */
+.blog {
+    margin: 0 12px 28px 12px;
+    padding: 8px 20px 16px 20px;
+    border: solid 1px #a0a0a0;
+}
+.blog h1 {
+    font-size: 32px;
 }
 
 /* フッター部分 */
