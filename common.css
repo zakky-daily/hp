@@ -185,7 +185,7 @@ header a:hover {
     font-size: 28px;
 }
 .blog .title-blog .date {
-    margin-top: -3px;
+    margin-top: -2px;
     display: flex;
     align-items: center;
 }
@@ -201,19 +201,19 @@ header a:hover {
 
 /* 文章部分 */
 .blog .docs-blog {
+    margin: 0 8px;
     text-align: center;
 }
 .blog .docs-blog img {
     display: block;
     margin-inline: auto;
-    margin-block-start: 1.5em;
-    margin-block-end: 1.5em;
+    margin-block-start: 2.5em;
+    margin-block-end: 2.5em;
 }
 .blog .docs-blog p {
-    margin-block-start: 1.5em;
-    margin-block-end: 1.5em;
+    margin-block-start: 2.5em;
+    margin-block-end: 2.5em;
 }
-
 
 /* フッター部分 */
 footer {
