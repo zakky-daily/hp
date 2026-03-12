@@ -8,7 +8,6 @@
   <title>VRフライボード制作記 | zakky-dailyの回顧録</title>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="marquee.js"></script>
 
   <link rel="stylesheet" href="../../common.css">
 </head>
@@ -26,19 +25,59 @@
     <span class="here">VRフライボード制作記</span>
   </div>
 
-  <div class="spotlight-outer">
-    <iframe src="spotlight.html" frameborder="0" class="spotlight"></iframe>
-  </div>
+  <iframe src="spotlight.html" frameborder="0" class="spotlight"></iframe>
 
   <div class="title-artworks">
     <div class="label">VRフライボード制作記</div>
-    <div class="message">Meta Quest用アプリを一通り作れるようになるために選んだ題材。</div>
+    <div class="message">浮世離れした神秘的空間の中で、空を渡り歩くゲーム</div>
   </div>
 
-  <div class="caution">
-    このゲームは無償でソースコード全文を公開しています。<br>
-    <a href="https://github.com/zakky-daily/flyboard" target="_blank">https://github.com/zakky-daily/flyboard</a> よりダウンロードしてお遊び下さい。<br>
-    ※クレジットを明記しない形での再配布はご遠慮ください
+  <div class="introduce">
+    <div class="inner">
+    <p>
+      紹介動画
+    </p>
+    <video src="introduce.mp4" poster="video_thumbnail.png" width="85%" controls></video>
+    <p>
+      このゲームは無償でソースコード全文を公開しています。<br>
+      <a href="https://github.com/zakky-daily/vr-flyboard" target="_blank">https://github.com/zakky-daily/vr-flyboard</a> よりダウンロードしてください<br>
+      ※再配布を禁止します
+    </p>
+    </div>
+  </div>
+
+  <div class="dashed-line"></div>
+
+  <div class="docs">
+    <div class="inner">
+      <img src="whats_flyboard.jpg" width="42%">
+      <p>
+        <span style="font-weight: bold; font-size: 20px;">フライボードとは？</span> 水上バイクから噴射される水圧を利用し、足に取り付けたボードから水流を出すことで空中を自由に飛び回るマリンスポーツです。浮遊感と海上3〜5mから見る景色の圧倒感から人気急上昇中。
+      </p>
+      <img src="zushi.jpg" width="42%">
+      <p>
+        作るからにはリアリティーを追求したいと、実際にフライボードを体験しに行きました。<br>
+        場所は神奈川県・逗子海岸。慣れるまでは大変だったけど、一度感覚を掴んでしまえば簡単に空中に浮くことができました。
+        めちゃくちゃ楽しかった（旅行記はこちらから）
+      </p>
+      <img src="hdrp.png" width="42%">
+      <p>
+        さて、体験して見た美しい景色をどのように表現しようか。<br>
+        UnityのHDRPレンダリングは、ハイエンドマシーン向けに設計された、壮大な映像表現を可能にするグラッフィックス機能。<br>
+        Meta QuestのビルドインはHDRPに対応していないので、Meta Horizon Linkを用いてPCから映像を出力することで実現。海と空を設定しただけで、一気に非日常感が出てきた。
+      </p>
+      <img src="bird.png" width="42%">
+      <p>
+        ゲームシステムは、空を飛んでいる鳥に触れて友達になると、ポイントを獲得できるというもの。<br>
+        （実際に鳥に触れるのが動物愛護法的に問題ないのかは置いておいて）鳥に触れられる方法って、船でも無理だし、ヘリでも無理だし、もしかしたらフライボードしかないのでは？ と思っています。<br>
+        制限時間内に沢山ポイントを獲得するほどGood。
+      </p>
+      <p>
+        周りには建物もない。悪口を言ってくる人もいない。<br>
+        あるのは、どこまでも続く海と、空と、一隻の小さなボートと、優しく見守ってくれる鳥たちだけ。<br>
+        この世界で、旅人は今日も、空を渡り歩きながら自分自身を内省するのだ。
+      </p>
+    </div>
   </div>
 
   <footer>

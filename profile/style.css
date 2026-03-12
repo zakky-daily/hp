@@ -21,7 +21,7 @@
 
 /* テーブル部分 */
 .infomations {
-    margin: 30px;
+    margin: 30px 32px;
 }
 .infomations table {
     margin: 24px 0;
@@ -31,12 +31,12 @@
 .infomations table tr th {
     padding: 16px 0;
     width: 160px;
-    border: solid 1px #a0a0a0;
+    border: solid 1px #606060;
     font-weight: normal;
 }
 .infomations table tr td {
     padding: 16px 24px;
-    border: solid 1px #a0a0a0;
+    border: solid 1px #606060;
 }
 
 .infomations table tr td ul {
