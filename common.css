@@ -41,6 +41,46 @@ header a:hover {
     background-color: rgba(255, 255, 255, 0.07);
 }
 
+/* 大タイトル部分 */
+.title-big {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.title-big > img {
+    width: 88px;
+    height: 88px;
+}
+.title-big .label {
+    margin-left: 8px;
+    font-size: 33px;
+}
+.title-big .change {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 18px;
+    border-bottom: solid 1.5px #d8d8d8;
+    text-decoration: none;
+}
+.title-big .change:hover::after {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background-color: rgba(0, 0, 0, 0.18);
+    pointer-events: none;
+}
+.title-big .change img {
+    width: 28px;
+    height: 28px;
+}
+.title-big .change .text {
+    font-size: 17px;
+    color: #d8d8d8;
+}
+
 /* パンくずリスト */
 .breadcrumbs {
     display: flex;
@@ -67,14 +107,14 @@ header a:hover {
 
 /* 作品 */
 /* タイトル部分 */
-.title-artworks {
+.title-artwork {
     margin: 12px 10px;
 }
-.title-artworks .label {
+.title-artwork .label {
     font-size: 30px;
     line-height: 1.35em;
 }
-.title-artworks .message {
+.title-artwork .message {
     color: #d8d8d8;
 }
 
@@ -85,22 +125,20 @@ header a:hover {
     background-color: #222222;
     border: solid 1px #181818;
     border-radius: 15px;
+    overflow: hidden;
 }
-.introduce .inner {
-    margin: 0.9em;
-}
-.introduce .inner p {
+.introduce p {
     margin-block-start: 0.9em;
     margin-block-end: 0.9em;
 }
-.introduce .inner p .emphasis {
+.introduce p .emphasis {
   background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
   background-position: 0 0;
   background-repeat: repeat-x;
   background-size: 0.99em 2px;
   padding-top: 0.3em;
 }
-.introduce .inner video {
+.introduce video {
     border-radius: 7px;
     vertical-align: top;
 }
@@ -110,42 +148,72 @@ header a:hover {
     margin: 44px 0;
     height: 1px;
     background-image: linear-gradient(to right, #ffffff 4px, transparent 4px);
-    background-size: 8px 2px;
+    background-size: 8px 1px;
     background-repeat: repeat-x;
 }
-.docs {
-    margin-top: 44px;
+.docs-artwork {
     text-align: center;
+    margin: 8px;
 }
-.docs .inner {
-    margin: 44px 8px;
-}
-.docs .inner > img {
+.docs-artwork > img {
     display: block;
     margin-inline: auto;
     margin-block-start: 2.5em;
     margin-block-end: 2.5em;
 }
-.docs .inner .img_group {
+.docs-artwork .img_group {
     display: flex;
     justify-content: center;
     gap: 12px;
     margin: 2.5em;
 }
-.docs .inner p {
+.docs-artwork p {
     margin-block-start: 2.5em;
     margin-block-end: 2.5em;
 }
 
 /* ブログ */
+/* タイトル部分 */
 .blog {
-    margin: 0 12px 28px 12px;
-    padding: 8px 20px 16px 20px;
-    border: solid 1px #a0a0a0;
+    margin-bottom: 30px;
+    border: solid 1px #606060;
 }
-.blog h1 {
-    font-size: 32px;
+.blog .title-blog {
+    margin: 9px 14px;
 }
+.blog .title-blog .label {
+    font-size: 28px;
+}
+.blog .title-blog .date {
+    margin-top: -3px;
+    display: flex;
+    align-items: center;
+}
+.blog .title-blog .date img {
+    width: 18px;
+    height: 18px;
+}
+.blog .title-blog .date .text {
+    margin-left: 3px;
+    font-size: 14px;
+    color: #d8d8d8;
+}
+
+/* 文章部分 */
+.blog .docs-blog {
+    text-align: center;
+}
+.blog .docs-blog img {
+    display: block;
+    margin-inline: auto;
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+}
+.blog .docs-blog p {
+    margin-block-start: 1.5em;
+    margin-block-end: 1.5em;
+}
+
 
 /* フッター部分 */
 footer {
