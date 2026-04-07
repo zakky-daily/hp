@@ -5,7 +5,7 @@
 .categories .category {
     margin: 12px 0;
     border: solid 1px #606060;
-    border-radius: 6px;
+    border-radius: 7px;
 }
 .categories .category > .title {
     display: flex;

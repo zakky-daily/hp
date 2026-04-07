@@ -1,0 +1,20 @@
+.soliloquies {
+    margin: 16px 60px 30px 60px;
+}
+
+.soliloquies .soliloquy {
+    margin: 16px 0;
+    border: solid 1px #484848;
+    border-radius: 20px;
+}
+
+.soliloquies .soliloquy .message {
+    margin: 29px 24px 4px 24px;
+    text-align: center;
+}
+
+.soliloquies .soliloquy .time {
+    margin: 4px 12px 6px 12px;
+    color: #a0a0a0;
+    font-size: 14px;
+}

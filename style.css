@@ -35,8 +35,8 @@
     filter: opacity(0.5);
 }
 .spotlights::scroll-button(*):enabled:hover {
-    outline: solid 1px rgba(0, 0, 0, 0.16);
-    background-color: rgba(0, 0, 0, 0.20);
+    outline: solid 1px rgba(0, 0, 0, 0.20);
+    background-color: rgba(0, 0, 0, 0.24);
     backdrop-filter: blur(0.5px);
     cursor: pointer;
 }
