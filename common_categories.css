@@ -31,7 +31,6 @@
     display: flex;
     margin: 13px 124px;
     height: 104px;
-    background-color: #292929;
     border-radius: 12px;
     overflow: hidden;
     text-decoration: none;
@@ -59,6 +58,7 @@
     justify-content: center;
     padding: 13px;
     min-width: 0;
+    background-color: #292929;
 }
 .categories .category .links .link .label .title {
     font-size: 26px;
